@@ -19,10 +19,17 @@ export const articles = [
 
 export const projects = [
   {
+   title: "InDoc Document",
+    description: "Intelligent documentary collaboration within Dynamics 365, combining Power Platform + AI",
+    image: "indoc-document.png",
+    link: "https://github.com/Ricardo-Manzanares/InDoc",
+    tags: ["Microsoft", "Developers","PowerPlatform","Copilot Studio","IA","Documents","PCF"],
+  },
+  {
     title: "Clone SLAs",
     description: "It is a tool designed to facilitate the cloning of SLA (Service Level Agreement) records between different records, either in the same environment or between different Dynamics 365 environments.",
     image: "clone-slas.png",
-    link: "clone-slas",
+    link: "https://www.xrmtoolbox.com/plugins/CloneSLAs/",
     tags: ["Microsoft", "Developers","XRMToolBox"],
   },
   {
