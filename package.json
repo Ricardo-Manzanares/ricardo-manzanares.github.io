@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:GitHubPage": "npm run build && shx rm -rf docs && shx mkdir docs && shx cp -r build/* docs/"
@@ -34,6 +34,7 @@
     ]
   },
   "devDependencies": {
+    "cross-env": "^10.1.0",
     "shx": "^0.4.0",
     "tailwindcss": "^3.3.3"
   }
