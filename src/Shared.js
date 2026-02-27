@@ -59,6 +59,13 @@ export const projects = [
     image: "Dynamics_CRM_Resource_Synchronization.jpg",
     link: "https://lnkd.in/eBpFMTv",
     tags: ["Microsoft", "Developers", "MicrosoftVisualStudio", "MicrosoftDynamics365"],
+  },
+  {
+    title: "pcf-proxy-dynamics",
+    description: "This package provides a lightweight Web API proxy that enables local React development for PCF components without requiring a running Dynamics 365 environment. It lets you build, debug, and test your component logic in real time, avoiding the heavy deploy-test cycle.",
+    image: "Dynamics_CRM_Resource_Synchronization.jpg",
+    link: "npm_package.png",
+    tags: ["Microsoft", "Developers", "PCF", "Testing", "Debugger"],
   }
 ];
 
@@ -187,4 +194,5 @@ export const componentAnimationStyle = `
       opacity: 1;
       transform: translateY(0);
   }
+
 `;
