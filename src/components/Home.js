@@ -16,19 +16,21 @@ const Home = () => {
   const period = 2000; // Pause at end of word
   
   // Combine latest projects and articles
+  const MAX_CAROUSEL_ITEMS = 5;
+  const normalizeItemsByType = (items, type) =>
+    items.map(item => ({
+      ...item,
+      type,
+      sortValue: item.date ? new Date(item.date).getTime() : -Infinity,
+    }));
+
   const carouselItems = [
-    ...projects.slice(0, 3).map(project => ({
-      ...project,
-      type: 'Project',
-      date: project.date || 'Recent Project'
-    })),
-    ...articles.slice(0, 2).map(article => ({
-      ...article,
-      type: 'Article',
-      image: article.image,
-      link: article.link
-    }))
-  ];
+    ...normalizeItemsByType(projects, 'Project'),
+    ...normalizeItemsByType(articles, 'Article'),
+  ]
+    .sort((a, b) => b.sortValue - a.sortValue)
+    .slice(0, MAX_CAROUSEL_ITEMS)
+    .map(({ sortValue, ...item }) => item);
 
   useEffect(() => {
     const handleTyping = () => {
