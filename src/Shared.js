@@ -73,6 +73,14 @@ export const projects = [
     link: "https://www.npmjs.com/package/@axazure/pcf-proxy-dynamics",
     date: "2026-02-11",
     tags: ["Microsoft", "Developers", "PCF", "Testing", "Debugger"],
+  },
+  {
+    title: "PCF-LevelSlider",
+    description: "This package provides a PCF component that allows you to create a slider control for selecting values within a specified range. It is designed to be easy to use and customizable, making it suitable for various applications in Dynamics 365 and Power Platform. This control for Dataverse/Model-driven apps, with horizontal or vertical orientation, configurable colors, and a value bound to a Choice (OptionSet) field.",
+    image: "PCF-LevelSlider.png",
+    link: "https://github.com/Ricardo-Manzanares/PCF-LevelSlider",
+    date: "2026-06-08",
+    tags: ["PowerPlatform", "PCF", "Dataverse", "Dynamics365", "PowerApps", "ModelDrivenApps", "TypeScript", "React", "OpenSource", "Developers", "ProCode"],
   }
 ];
 
@@ -136,7 +144,7 @@ export const certifications = [
     title: "MB2-712 - Microsoft Dynamics CRM 2016 Customization and Configuration",
     institution: "Microsoft",
     date: "2017-11",
-    link: "#"
+    link: ""
   },
   {
     title: "Microsoft Certified: Azure Developer Associate",
