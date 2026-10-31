@@ -81,6 +81,14 @@ export const projects = [
     link: "https://github.com/Ricardo-Manzanares/PCF-LevelSlider",
     date: "2026-06-08",
     tags: ["PowerPlatform", "PCF", "Dataverse", "Dynamics365", "PowerApps", "ModelDrivenApps", "TypeScript", "React", "OpenSource", "Developers", "ProCode"],
+  },
+  {
+    title: "QuickAccess TV",
+    description: "This project is a Home screen for your TV, Apple TV-style: a dock with your favorite apps, a grid with all the others, folders, and 4K wallpapers. A single web interface that works on LG webOS, Android TV, and Fire TV",
+    image: "QuickAccessTV.png",
+    link: "https://github.com/Ricardo-Manzanares/QuickAccessTV",
+    date: "2026-10-31",
+    tags: ["TV", "Dashboard", "Media", "LG", "Fire TV", "Android TV", "WebOS", "Smart TV", "React", "OpenSource", "Developers", "ProCode", "No-Root"],
   }
 ];
 

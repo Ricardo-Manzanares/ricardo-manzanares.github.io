@@ -3,6 +3,7 @@ import { projects, scrollAnimationStyles } from '../Shared'
 
 const Projects = () => {
   const projectRefs = useRef([]);
+  const sortedProjects = [...projects].sort((a, b) => b.date.localeCompare(a.date));
   
   useEffect(() => {
     // Set up intersection observer to detect when elements come into view
@@ -46,7 +47,7 @@ const Projects = () => {
       <p className="text-center text-gray-400 mb-12">Here are some of the things I've built.</p>
       
       <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-        {projects.map((project, index) => (
+        {sortedProjects.map((project, index) => (
           <a 
             href={project.link} 
             key={project.title}
